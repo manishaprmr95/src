@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div id="card" class="weater">
+                <div class="city-selected">
+                    <article>
+
+                        <div class="info">
+                            <div class="city"><span>City:</span> {{result.name}}</div>
+                            <div class="night">Humidity : {{result.main.humidity}}</div>
+                            <div class="night">Type : {{result.weather[0].description}}</div>
+
+                            <!-- <div class="temp">3°</div> -->
+
+                            <div class="wind">
+                                
+
+                                Wind Speed : <span>{{result.wind.speed}} km/hour</span>
+                            </div>
+                        </div>
+
+                        <div class="icon">
+                            
+                        </div>
+
+                    </article>
+                    
+                    <figure style="background-image: url(http://136.243.1.253/~creolitic/bootsnipp/home.jpg)"></figure>
+
+                    
+                </div>
+
+                <div class="days">
+                    <div class="row row-no-gutter">
+                        <input type="text" #cityname />
+                        <button (click)="myfunc(cityname.value)">Change location</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
